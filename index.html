@@ -3,74 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil da Cristina Donária Eccher</title>
+    <title>Desafio 01 - HTML</title>
 </head>
 <body>
     <header>
-        <h1>Cristina Donária Eccher</h1>
-        <img src="fotoPerfil.jpg" alt="Imagem da foto de Perfil" width="260" height="160" style="float: right; margin: 10px;" title="Imagem de Perfil">
-
+        <h1>Aprendendo os Fundamentos de HTML
+        <img src="html_imagem.png" alt="Imagem da foto de Perfil" width="260" height="160" style="float: right; margin: 30px;" title="Imagem de Perfil">
+            </h1><hr>
+    </header>
+             Nessa sessão você vai aprender sobre HTML e como a criar uma página do zero:
         <nav><!--sessão de navegação do site -->
             <ul> <!--Lista não ordenada para Menus-->
-                <li> <a href="#sobre">Sobre mim</a></li>
-                <li> <a href="#projetos">Projetos</a></li>
-                <li> <a href="#contato">Contatos</a></li>
+                <li> <a href="#OqueéHTML?">O que é HTML?</a></li>
+                <li> <a href="#tagsHTML">O que são tags HTML?</a></li>
+                <li> <a href="#diferencaatributoelemento"> Qual é a diferença entre elementos, atributos e tags HTML?</a></li>
+                <li> <a href="#principaistagsHTML"> Quais são as principais tags HTML para criar sua página?</a></li>
+                <li> <a href="#TagsEstruturaisHTML"> Quais são Tags estruturais HTML?</a></li>
+                <li> <a href="#tagsformatacaoHTML"> Quais são as tags de Formatação HTML?</a></li>
+                <li> <a href="#tagstabulacaoHTML"> Quais são as tags para Tabulação em HTML?</a></li>
+                <li> <a href="#tagslinkHTML"> Quais são as tags para Link HTML?</a></li>
                 <li> <a href="#https://google.com" target="_blank">Google</a></li>
+
                 <!-- <li>Sobre mim</li> -->
             </ul>
         </nav>
 
-    </header>
-    <section id="sobre"> 
-        <h2><br>Sobre mim</h2>
-            <article>
-            Atualmente sou Analista de Qualidade de Software.  <br>
-            Estou em busca de desenvolvimento técnico para aprender <mark>automação de Testes</mark>. <br>
-            </article> <br>
-            <h5><blockquote >
-                <p> Words can be like X-rays, if you use them <br>
-                    properly—they'll go through anything. <br>
-                    You read and you're pierced.</p>
-            </blockquote></h5>
-            <h6><p>—Aldous Huxley, <cite>Brave New World</cite></p></h6>
-            
-            <aside>
-                <h3>Experiências Profissional em empresas como:</h3>
-                    
-                    <ul>
-                        <li>Totvs - Analista de Suporte</li>
-                        <li>Unimed Federação Santa Catarina - Analista de Qualidade de Software </li>                  
-                        <li>Pitang - Consultora de Qualidade de Software</li>
-                    </ul>
-                
-                
-            </aside>    
-    </section>
-    <section id="projetos"> 
-        <h2>Projetos</h2><sub>Em andamento</sub>
-        <article>
-            <h3>Portifólios</h3>
-            <p>
-                <ol>
-                    <li><abbr>HTML</abbr></li>
-                    <li><abbr>CSS</abbr></li>
-                    <li><abbr>Java Script</abbr></li>
-                </ol>
-
-            </p>
+    <section id="#OqueéHTML?"> <br>
+        <h2>O que é HTML?</h2>
+        <article> 
+        <p><h3><strong> HTML (HyperText Markup Language) é a linguagem de marcação padrão 
+                        para criar e estruturar páginas web, funcionando como o "esqueleto" 
+                        que organiza conteúdos como textos, imagens e links. 
+                        Baseado em tags, ele define a estrutura do documento, que navegadores 
+                        como Chrome ou Firefox interpretam para exibir o site. </strong></h3></p>
         </article>
+            <nav><!--sessão de navegação do site -->
+                <ul> <!--Lista não ordenada para Menus-->
+                    <br><p>Aqui estão os pontos principais sobre HTML: </p>
+                    <li><mark>O que significa:</mark> Linguagem de Marcação de Hipertexto, indicando que ele estrutura textos e cria links entre páginas. </li>
+                    <li><mark>Função:</mark> Organizar o conteúdo de forma lógica, como títulos (&lt;h1&gt;), parágrafos (&lt;p&gt;), imagens (&lt;img&gt;) e listas &lt;li&gt;.
+                    <li><mark>Não é Linguagem de Programação:</mark> HTML é uma linguagem de marcação, o que significa que ele organiza o conteúdo, 
+                           mas não possui funcionalidades dinâmicas (como lógica de programação). </li>
+                    <li><mark> Base da Web:</mark> É a linguagem base utilizada no desenvolvimento web, essencial para qualquer página, geralmente 
+                            combinada com CSS (estilo) e JavaScript (interatividade). </li>
+                    </ul>
+                        </nav>
+    </section>         
+        
+    <section id="tagsHTML"> 
+        <h2><br>O que são tags HTML?</h2> <small>Voltar</small>
+            <article>
+                 <img src="estrutura_tag.png" alt="Imagem da estrutura Básica HTML" width="300" height="150" style="float: right; margin: 30px;" title="Imagem da estrutura Básica HTML">
+                
+            <p>Tags HTML são instruções que informam ao navegador como formatar o texto. <br>
+                Você pode usar tags para definir itálico, quebras de linha, objetos, bullet points e muito mais.<br>
+                Essas tags estão presentes no HTML (Hypertext Markup Language) de todas as páginas da internet. <br></p>
+                Uma tag HTML deve conter três partes:<br>
+                <ol>
+                    <li> Uma tag de abertura — começando com um símbolo &lt; div &gt;;</li>
+                    <li>Conteúdo — instruções curtas para exibir o elemento na página <i>"div"</i></li>
+                    <li>Uma tag de fechamento — terminando com um símbolo &lt;/div&gt;; </li> 
+                </ol>
+                Formando as tags como &lt;html&gt;, &lt;head&gt;, e &lt;body&gt; que dizem ao navegador como exibir os elementos.              
+            </article> <br>
     </section>
-    <footer> 
-        <section id="contato">
-           <h2>Contatos</h2>
-        <sup><p>Tem um projeto em mente? <br>
-            Entre em <u>contacto</u></p></sup>
-        <address>
-            Email:<a href="mailto:cristinadeccher@gmail.com">cristinadeccher@gmail.com</a><br>
-            Telefone: <a href="(47) 99133-6585">(47) 99133-6585</a> <br>
-                 <small><p><i>Direitos reservados</i></p></small>
-        </address>
-        </section>
-    </footer>
+    
+
 </body>
 </html>
