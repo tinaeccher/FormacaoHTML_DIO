@@ -1,0 +1,38 @@
+# Desafio 01 - Fundamentos do HTML 🚀
+
+Este repositório contém a resolução do primeiro desafio do Bootcamp de HTML. O objetivo foi construir uma página estruturada, utilizando tags semânticas, tabelas explicativas e navegação interna (âncoras).
+
+## 📋 Assuntos Abordados
+
+A página desenvolvida cobre os seguintes tópicos fundamentais:
+- O que é HTML e sua função na web.
+- Anatomia das Tags, Elementos e Atributos.
+- Tags Estruturais (Layout Semântico).
+- Formatação de Texto.
+- Criação de Tabelas e Listas.
+- Implementação de Hiperlinks.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5**: Estruturação semântica de todo o conteúdo.
+* **Markdown**: Utilizado para a criação deste arquivo de documentação.
+
+## 🏗️ Estrutura do Projeto
+
+O projeto foi organizado seguindo a hierarquia semântica do HTML5:
+
+| Seção | Descrição |
+| :--- | :--- |
+| `header` | Cabeçalho principal com título do projeto. |
+| `nav` | Menu de navegação com âncoras internas. |
+| `main` | Conteúdo principal dividido em `sections`. |
+| `table` | Tabelas comparativas de tags, exemplos e resultados. |
+| `footer` | Rodapé com créditos do desenvolvedor. |
+
+
+
+## 🚀 Como visualizar o projeto
+
+1. Faça o clone deste repositório:
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
