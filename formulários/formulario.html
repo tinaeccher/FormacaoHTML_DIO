@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form name="signup" 
+    method="POST"
+    action="https://meusite.com.br/signup"
+    target="_blank"
+    autocomplete="on"
+    onsubmit="alert('Enviei o formulário')"> 
+    <!-- atributo name 
+    - atributo method de acordo com a req 
+    - atributo action envia o formulatorio para outra página
+    - atributo target forma para abrir outra aba
+    - atributo autocomplete = 
+    - atributo on alguma coisa - quando envia algo dispara um evento
+    por exemplo onsubmit dispara um evento ao clicar em enviar-->
+        Nome: <input type="text" name="name" /><br>
+        Idade: <input type="number" name="age" /><br>
+        Senha: <input type="password" name="password" /><br>
+        <button type="submit">Enviar</button>
+    </form>     
+    
+</body>
+</html>
