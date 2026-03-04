@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Estilizando a tabela com CSS-->
+    <style> 
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightgray;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: #E9E9E9;
+            cursor: pointer;
+        }
+      
+    </style>
+</head>
+<body>
+    
+<section id="tagstabulacaoHTML"> 
+        <h2>Quais as TAGS de Tabelas e tópicos em HTML?</h2>
+            <p>As tabelas em HTML permitem organizar dados em linhas e colunas de forma estruturada.</p>
+
+    <table border="1" 
+        sumary="Tabela com as tags utilizadas para tabelas" 
+        alt="tabela com as tags"
+        cellspacing="1" 
+        cellpadding="20">
+        <caption>Tabela com as tags</caption>
+        <thead>
+            <tr>
+                <th colspan="4"> Listagem com tags usadas para criar tabelas em html</th>
+                <!--Colspan para mesclar colunas e rollspan para mesclar linhas-->
+            </tr>
+            <tr><!--Table row-->
+                <th>TAG</th><!--table hight cabeçalho autoformata-->
+                <th>Exemplo</th>
+                <th>Resultado</th>
+                <th>Onde usar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;table&gt;</code></td>
+                <td><code>&lt;table&gt;...&lt;/table&gt;</code></td>
+                <td>(O contentor pai)</td>
+                <td>Tag principal que envolve todos os elementos de uma tabela.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tr&gt;</code></td>
+                <td><code>&lt;tr&gt;...&lt;/tr&gt;</code></td>
+                <td>(Uma linha)</td>
+                <td>Define uma linha (Table Row) dentro da tabela.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;th&gt;</code></td>
+                <td><code>&lt;th&gt;Título&lt;/th&gt;</code></td>
+                <td><strong>Título</strong></td>
+                <td>Define uma célula de cabeçalho (Table Header), o texto fica em negrito.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;td&gt;</code></td>
+                <td><code>&lt;td&gt;Dado&lt;/td&gt;</code></td>
+                <td>Dado</td>
+                <td>Define uma célula comum de dados (Table Data).</td>
+                
+            </tr>
+    </table>
+            <p><h2>TAGS Auxiliares para a Tabela</h2></p>
+    <table border="1">
+        <thead>
+            <tr><!--Table row-->
+                <th>TAG</th><!--table hight cabeçalho autoformata-->
+                <th>Exemplo</th>
+                <th>Resultado</th>
+                <th>Onde usar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;thead&gt;</code></td>
+                <td><code>&lt;thead&gt;...&lt;/thead&gt;</code></td>
+                <td>(Cabeçalho)</td>
+                <td>Agrupa o conteúdo do cabeçalho da tabela para melhor organização.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tbody&gt;</code></td>
+                <td><code>&lt;tbody&gt;...&lt;/tbody&gt;</code></td>
+                <td>corpo</td>
+                <td>Agrupa o conteúdo do cabeçalho da tabela para melhor organização.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;tfoot&gt;</code></td>
+                <td><code>&lt;tfoot&gt;...&lt;/tfoot&gt;</code></td>
+                <td>Radape</td>
+                <td>Agrupa o conteúdo do cabeçalho da tabela para melhor organização.</td>
+            </tr>
+        </tbody>
+     </table>
+    </section>
+
+</body>
+</html>
