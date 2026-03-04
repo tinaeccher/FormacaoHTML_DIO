@@ -6,15 +6,15 @@
     <title>Formulário de cadastro</title>
 </head>
 <body>
-      <form onsubmit="" method="get">
+      <form onsubmit="" method="get"><!--GET = envia as informações na url e POST = envia os formulários com dados embutidos.-->
         <!--O evento onSubmit do formulário é mais utilizado para Validar o formulário antes do envio ao servidor.-->
         <label>Nome:</label><input type="text" name="name" style="margin: 10px;"><br>
         <label>Idade:</label><input type="number" name="age" style="margin: 10px;"><br>
         <label>Password:</label><input type="password" name="password" style="margin: 10px;"><br>
 
         <button type="button" style="margin: 10px;">Normal Button</button> <!--Um botão normal -->
-        <button type="reset" style="margin: 10px;">Reset - Limpa os campos</button> <!--Um botão normal -->
-        <button type="submit" style="margin: 10px;">Submit</button> <!--Um botão normal -->
+        <button type="reset" style="margin: 10px;">Reset - Limpa os campos</button> <!--Limpa os campos do formulário. -->
+        <button type="submit" style="margin: 10px;">Submit</button> <!--Recarrega a página toda com o formulário sem informações. -->
         <button onclick="alert('Hello!')" style="margin: 10px;">Button on click</button><!-- Com Java script no evento onclick-->
         <button disabled>Disabled Button</button> <!--Um botão desabilitado -->
     </form>
