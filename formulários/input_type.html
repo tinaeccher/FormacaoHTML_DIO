@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos input type</title>
+</head>
+<body>
+    
+<section id="todosTiposInputHTML">
+    <h2>Todos os Tipos de Input em HTML</h2>
+    <p>Abaixo estão todos os tipos de entrada de dados suportados pelo elemento <code>&lt;input&gt;</code>.</p>
+
+    <table border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr style="background-color: #f8f9fa;">
+                <th>TAG</th>
+                <th>Exemplo de Código</th>
+                <th>Resultado</th>
+                <th>Onde usar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>button</code></td>
+                <td><code>&lt;input type="button" value="Clique"&gt;</code></td>
+                <td><input type="button" value="Clique"></td>
+                <td>Botões clicáveis usados principalmente com JavaScript.</td>
+            </tr>
+            <tr>
+                <td><code>checkbox</code></td>
+                <td><code>&lt;input type="checkbox"&gt;</code></td>
+                <td><input type="checkbox"></td>
+                <td>Permite ao usuário selecionar zero ou mais opções.</td>
+            </tr>
+            <tr>
+                <td><code>color</code></td>
+                <td><code>&lt;input type="color"&gt;</code></td>
+                <td><input type="color"></td>
+                <td>Abre um seletor de cores nativo.</td>
+            </tr>
+            <tr>
+                <td><code>date</code></td>
+                <td><code>&lt;input type="date"&gt;</code></td>
+                <td><input type="date"></td>
+                <td>Campo para seleção de data (dia, mês e ano).</td>
+            </tr>
+            <tr>
+                <td><code>datetime-local</code></td>
+                <td><code>&lt;input type="datetime-local"&gt;</code></td>
+                <td><input type="datetime-local"></td>
+                <td>Seleção de data e hora (sem fuso horário).</td>
+            </tr>
+            <tr>
+                <td><code>email</code></td>
+                <td><code>&lt;input type="email"&gt;</code></td>
+                <td><input type="email" placeholder="email@site.com"></td>
+                <td>Campos que devem conter um endereço de e-mail.</td>
+            </tr>
+            <tr>
+                <td><code>file</code></td>
+                <td><code>&lt;input type="file"&gt;</code></td>
+                <td><input type="file" style="width:150px"></td>
+                <td>Seleção de arquivos para upload.</td>
+            </tr>
+            <tr>
+                <td><code>hidden</code></td>
+                <td><code>&lt;input type="hidden"&gt;</code></td>
+                <td>(Invisível)</td>
+                <td>Dados que não devem ser vistos ou editados pelo usuário.</td>
+            </tr>
+            <tr>
+                <td><code>image</code></td>
+                <td><code>&lt;input type="image" src="btn.png"&gt;</code></td>
+                <td>(Botão imagem)</td>
+                <td>Define uma imagem como botão de envio (submit).</td>
+            </tr>
+            <tr>
+                <td><code>month</code></td>
+                <td><code>&lt;input type="month"&gt;</code></td>
+                <td><input type="month"></td>
+                <td>Permite selecionar mês e ano.</td>
+            </tr>
+            <tr>
+                <td><code>number</code></td>
+                <td><code>&lt;input type="number"&gt;</code></td>
+                <td><input type="number" style="width:50px"></td>
+                <td>Campo restrito a valores numéricos.</td>
+            </tr>
+            <tr>
+                <td><code>password</code></td>
+                <td><code>&lt;input type="password"&gt;</code></td>
+                <td><input type="password" value="123"></td>
+                <td>Campo onde os caracteres são mascarados.</td>
+            </tr>
+            <tr>
+                <td><code>radio</code></td>
+                <td><code>&lt;input type="radio"&gt;</code></td>
+                <td><input type="radio"></td>
+                <td>Seleção de apenas uma opção dentro de um grupo.</td>
+            </tr>
+            <tr>
+                <td><code>range</code></td>
+                <td><code>&lt;input type="range"&gt;</code></td>
+                <td><input type="range"></td>
+                <td>Controle deslizante para selecionar um valor em um intervalo.</td>
+            </tr>
+            <tr>
+                <td><code>reset</code></td>
+                <td><code>&lt;input type="reset"&gt;</code></td>
+                <td><input type="reset" value="Limpar"></td>
+                <td>Botão que limpa todos os campos do formulário.</td>
+            </tr>
+            <tr>
+                <td><code>search</code></td>
+                <td><code>&lt;input type="search"&gt;</code></td>
+                <td><input type="search" placeholder="Buscar..."></td>
+                <td>Campo de texto otimizado para pesquisas.</td>
+            </tr>
+            <tr>
+                <td><code>submit</code></td>
+                <td><code>&lt;input type="submit"&gt;</code></td>
+                <td><input type="submit" value="Enviar"></td>
+                <td>Botão que envia os dados do formulário ao servidor.</td>
+            </tr>
+            <tr>
+                <td><code>tel</code></td>
+                <td><code>&lt;input type="tel"&gt;</code></td>
+                <td><input type="tel" placeholder="(00) 0000-0000"></td>
+                <td>Campo para inserção de números de telefone.</td>
+            </tr>
+            <tr>
+                <td><code>text</code></td>
+                <td><code>&lt;input type="text"&gt;</code></td>
+                <td><input type="text"></td>
+                <td>Tipo padrão: campo de texto simples de uma linha.</td>
+            </tr>
+            <tr>
+                <td><code>time</code></td>
+                <td><code>&lt;input type="time"&gt;</code></td>
+                <td><input type="time"></td>
+                <td>Campo para seleção de hora (horas e minutos).</td>
+            </tr>
+            <tr>
+                <td><code>url</code></td>
+                <td><code>&lt;input type="url"&gt;</code></td>
+                <td><input type="url" placeholder="http://..."></td>
+                <td>Campo que deve conter um endereço de site (URL).</td>
+            </tr>
+            <tr>
+                <td><code>week</code></td>
+                <td><code>&lt;input type="week"&gt;</code></td>
+                <td><input type="week"></td>
+                <td>Permite selecionar uma semana e um ano específicos.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>

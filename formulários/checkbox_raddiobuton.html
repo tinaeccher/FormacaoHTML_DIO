@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e radiobutton</title>
+</head>
+<body>
+    <form name="radio e checkbox" method="get"> <!--GET = envia as informações na url e POST = envia os formulários com dados embutidos.-->
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais Opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+       <!--quando coloco colchetes no nome indica que é uma array, onde tem vários checkbox
+       com o mesmo nome seguido de colchetes e com valores diferentes o servidor vai entender
+        que está sendo mandado uma lista
+        Se marcar duas opções serão enviadas as duas para o servidor   
+        $opcional("queijo" ,"cebola")--> 
+        
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="nao">Não<br> 
+        <!--o raddio com o mesmo nome e valores diferentes -->
+        
+        <p>Bebida</p>
+        <input type="radio" name="" value="suco">Suco<br>
+        <input type="radio" name="" value="refrigerante">Refrigerante<br>
+        <input type="radio" name="" value="agua">Água<br>
+        <input type="radio" name="" value="nenhum">Nenhum<br> <br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+    
+</body>
+</html>

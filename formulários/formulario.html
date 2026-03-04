@@ -9,21 +9,102 @@
     <form name="signup" 
     method="POST"
     action="https://meusite.com.br/signup"
+    enctype="application/x-www-form-urlencoded"
     target="_blank"
     autocomplete="on"
     onsubmit="alert('Enviei o formulário')"> 
-    <!-- atributo name 
-    - atributo method de acordo com a req 
-    - atributo action envia o formulatorio para outra página
-    - atributo target forma para abrir outra aba
-    - atributo autocomplete = 
-    - atributo on alguma coisa - quando envia algo dispara um evento
-    por exemplo onsubmit dispara um evento ao clicar em enviar-->
-        Nome: <input type="text" name="name" /><br>
-        Idade: <input type="number" name="age" /><br>
-        Senha: <input type="password" name="password" /><br>
+    <!-- tag form
+        - atributo name: identifica o formulário 
+        - atributo method: especifica o método HTTP a ser usado ao enviar os dados do formulário. Os métodos mais comuns são “GET” e “POST”.
+           "POST" -> não permite que as informações digitadas no formulário apareçam na url depois de submetido,
+        - atributo action: especifica para onde os dados do formulário devem ser enviados quando o formulário é submetido.
+        - Atributo enctype: especifica como os dados do formulário devem ser codificados antes de serem enviados para o servidor.
+             (ex: multipart/form-data para envio de arquivos).
+        - atributo target: Define onde exibir a resposta (ex: _blank para nova janela, _self padrão)
+        - atributo autocomplete: Define se o navegador deve autocompletar os campos (on ou off).
+        - atributo onsubmit: 
+        -->
+        <label>Nome:</label> <input type="text" name="name" style="margin: 10px;" /><br> 
+        <label>Sobrenome</label> <input type="text" name="Sobrename" style="margin: 10px;" /><br> 
+        <label>Idade</label> <input type="number" name="age" style="margin: 10px;" min="5" max="99" step="3"/><br> 
+        <!--Renderiza um campo numérico, que aceita no mínimo em min, e no máximo em max. Clicando nas setinhas, aumenta ou diminui de 10 em 10.-->
+        <label>Sexo</label> Masculino <input type="radio"name="masculino"/> Feminino<input type="radio" name="feminino" style="margin: 10px;" value="Masculino"/><br> 
+        <label>Senha</label> <input type="password" name="password" style="margin: 10px;"/><br>
+        <label>Nivel</label> <input type="range" name="nivel" style="margin: 10px;"/><br>
+        <label>Color</label> <input type="color" name="cor" style="margin: 10px;"/><br>
+        <label>Email</label> <input type="email" name="email" style="margin: 10px;"/><br>
+        <label>Url</label> <input type="url" name="url" style="margin: 10px;"/><br>
+        <!-- tag input 
+         cria um campo conforme o atributo /-->
         <button type="submit">Enviar</button>
-    </form>     
+        </form>
+            <hr>
+    <form name="inputtype">    
+    <label>Botão:</label> 
+    <input type="button" value="Botão" style="margin: 10px;"/><br>
+
+    <label>Checkbox:</label> 
+    <input type="checkbox" name="escolha" style="margin: 10px;"/><br>
+
+    <label>Cor:</label> 
+    <input type="color" name="cor_preferida" style="margin: 10px;"/><br>
+
+    <label>Data:</label> 
+    <input type="date" name="data_evento" style="margin: 10px;"/><br>
+
+    <label>Data e Hora Local:</label> 
+    <input type="datetime-local" name="data_hora" style="margin: 10px;"/><br>
+
+    <label>E-mail:</label> 
+    <input type="email" name="email_usuario" style="margin: 10px;"/><br>
+
+    <label>Arquivo:</label> 
+    <input type="file" name="arquivo_upload" style="margin: 10px;"/><br>
+
+    <label>Escondido (Hidden):</label> 
+    <input type="hidden" name="id_secreto" value="123"/><br>
+
+    <label>Imagem (Botão):</label> 
+    <input type="image" src="https://via.placeholder.com/50" alt="Submit" style="margin: 10px;"/><br>
+
+    <label>Mês:</label> 
+    <input type="month" name="mes_ano" style="margin: 10px;"/><br>
+
+    <label>Número:</label> 
+    <input type="number" name="quantidade" style="margin: 10px;"/><br>
+
+    <label>Senha:</label> 
+    <input type="password" name="senha" style="margin: 10px;"/><br>
+
+    <label>Radio Button:</label> 
+    <input type="radio" name="opcao" value="1" style="margin: 10px;"/><br>
+
+    <label>Intervalo (Range):</label> 
+    <input type="range" name="volume" style="margin: 10px;"/><br>
+
+    <label>Reset (Limpar):</label> 
+    <input type="reset" value="Resetar" style="margin: 10px;"/><br>
+
+    <label>Busca:</label> 
+    <input type="search" name="pesquisa" style="margin: 10px;"/><br>
+
+    <label>Enviar (Submit):</label> 
+    <input type="submit" value="Enviar Dados" style="margin: 10px;"/><br>
+
+    <label>Telefone:</label> 
+    <input type="tel" name="telefone" style="margin: 10px;"/><br>
+
+    <label>Texto:</label> 
+    <input type="text" name="nome_simples" style="margin: 10px;"/><br>
+
+    <label>Hora:</label> 
+    <input type="time" name="horario" style="margin: 10px;"/><br>
+
+    <label>Url:</label> 
+    <input type="url" name="url_site" style="margin: 10px;"/><br>
+
+    <label>Semana:</label> 
+    <input type="week" name="semana_ano" style="margin: 10px;"/><br>
     
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Box</title>
+</head>
+<body>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="nome" id="nome" style=" margin: 10px;"><br>
+        <label>Cargo:</label>
+            <select name="role" multiple><!--Valores que o usuário pode escolher para o campo-->
+                <option value="">Selecione o cargo</option><!--Em options aparecem as Opções para o usuáro-->
+                <option value="">Presidente</option>
+                <option value="">Gerente</option>
+                <option value="">Diretor</option>
+                <option value="">Vendedor</option>
+            </select><br>
+            <label>Assunto</label><input type="text"  name="nome" id="assunto" style=" margin: 10px;"><br>
+            <label>Mensagem:</label>
+            <textarea name="message" id="Mensagem" rows="20" cols="50"></textarea>
+            <button type="submit" style="margin: 10px;">Enviar</button> <!--Um botão normal -->
+    </form>
+</body>
+</html>
