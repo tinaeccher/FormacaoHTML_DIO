@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrando recursos Especiais do HTML</title>
+</head>
+
+<!--Tags bgcolor e font vão cair em desuso em html pois é considerada para o CSS-->
+<body bgcolor="#000000">
+    <font face ="Arial" color="#FFFFFF">Dio.me Trilha HTML</font> 
+
+    <header>
+        <p> No HTML 5 passa a ser mais estrutural a escrita. <br>
+            Onde Tags como bgcolor e font passam a ser voltadas para CSS utilizadas em formatação</p>
+        <p> No HTML que passa a ser definido as questões de acessibilidade. <br> 
+            Onde existem tags que facilitam o acesso para pessoas com deficiencias
+            W3C é o consórcio que mantém padrões de web
+            WAI Iniciativa de acesso a web é um comitê para padrões de acessibilidade
+            WACG É web content acessility guideline - Guia de como utilizar acessibilidade na página. </p>    
+    
+    </header>
+    
+    <main>
+        <p>Na sessão main contém o conteúdo principal da página <br>
+        onde poderá ser dividido em sessões</p>
+        <!-- O Datalist listam as opções em um toast-->
+        <label for="navegadores">Escolha um navegador:</label>
+        <input list="browsers" id="navegadores" name="navegadores" />
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+        <!-- O Select listam as opções para serem escolhidas no componente-->
+        <label>Selecione o Browser</label>
+        <select name="browser">
+            <option value="">Google Chrome</option>
+            <Option value="">Firefox</Option>
+            <option value="">Microsoft Edge</option>
+            <option value="">Safari</option>
+            <option value="">Opera</option>
+        </select>
+        
+    </main>
+
+    <footer>
+        <p>Para copiar esta informacao, pressione <kbd> CTRL <kbd> + <kbd> C </kbd></p>
+    </footer>
+
+</body>
+</html>
