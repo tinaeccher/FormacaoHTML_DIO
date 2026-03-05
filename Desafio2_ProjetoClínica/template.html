@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dollstar Clínica de bonecas | Diversas Especialidades</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<style>
+    img {
+            border-radius: 15px; /* Valor em pixels para o arredondamento */
+    }
+    .row{
+            margin: 5px;
+        }
+     label{
+            width: 150px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+             <p><h1>Consertos</h1></p>
+            <ul>
+                <li>Bonecas</li>
+                <li>Bonecos</li>
+                <li>Brinquedos Antigos</li>
+                <li>Brinquedos de Controle</li>
+                <li>Brinquedos de Atividades</li>
+                <li>Brinquedos Motorizados</li>
+                <li>Brinquedos Radicais</li>
+                <li>Video Games</li>
+                <li>Helicópteros e Drones</li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="DollstarLogo.jpg" style="width:200px; float: right; margin: 10px;">
+                <p><h1>Dollstar Clínica de bonecas | Diversas Especialidades</h1></p>
+                <p><h2>Consertos, reparos e diagnósticos </h2></p>
+            </div>
+    
+            <div class="content">
+                <div>
+                    <img src="atendimento.jpg"  style="width:300px; float: right; margin: 50px;"> 
+                    <p><h2>Atendimento especializado</h2></p><br>
+
+                    <p>Um Hospital de verdade para cuidar de um bem tão precioso: Seu brinquedo <br>
+                    Aqui, nossas enfermeiras e doutores se importam de verdade com a recuperação dele. <br>
+                    Venha nos visitar e conheça todas as alas do nosso Hospital.</p>
+                   
+                    <br><br>
+                </div> <br><br><br>
+                <div>
+                    <p><h2>Atendimento de Urgência e emergência</h2></p>
+                    <img src="consultorio1.jpg" style="width:300px; float: left;margin: 30px;"><br>
+                    <p>Nossa equipe médica está pronta para cuidar da saúde da sua boneca<br>
+                    com todo o profissionalismo e carinho que ela merece, deixando-a impecável <br>
+                    como nunca após o tratamento correto para cada caso.<br>
+                    A melhor estrutura hospitalar para brinquedos é aqui, 
+                    no Hospital das Bonecas — <br>
+                    Solicite seu orçamento sem compromisso hoje mesmo.</p><br><br><br><br><br><br>
+                </div>
+                <div>
+                    <hr>
+                    <table border="1" 
+                        sumary="Horário de Atendimento" 
+                        alt="Tabela com o horário de Atendimento"
+                        cellspacing="1" 
+                        cellpadding="2">
+                        
+                        <thead>
+                            <tr>
+                            <th colspan="2">Horário de Atendimento</th>
+                            <!--Colspan para mesclar colunas e rollspan para mesclar linhas-->
+                            </tr>
+                            <tr><!--Table row-->
+                                <th>Dias</th><!--table hight cabeçalho autoformata-->
+                                <th>Horário</th><!--table hight cabeçalho autoformata-->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda a Sexta</td>
+                                <td>08:00 as 18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>08:00 as 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Plantão</td>
+                                <td>(11)9999-9999</td>
+                            </tr>
+                        </table>
+                    </div>
+           
+        </div>
+            <div class="footer">
+                <hr><h1>ENTRE EM CONTATO - Telefone (11) 9999-9999</h1>
+                <iframe style="width:400px; height: 300px; float: right; margin: 30px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467688.89495119266!2d-46.5952992!3d-23.6824124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1772671163035!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                    <form  name="orcamento" method="POST"autocomplete="on">
+                        <div class="row"> <!--div com css para separar os campos-->
+                            <label for="nome">Nome:</label><input type="text"/><br>
+                            <label for="telefone">Telefone:</label><input type="text"/><br>
+                            <label for="paciente">Nome do Paciente:</label><input type="text"/><br>
+                            <label for="tipo">Tipo/Modelo:</label><input type="text"/><br>
+                            <label>Sintomas:</label>
+                                <select name="role" ><!--Valores que o usuário pode escolher para o campo-->
+                                    <option value="">Selecione um sintoma</option><!--Em options aparecem as Opções para o usuáro-->
+                                    <option value="">Desgaste por uso ou armazenamento</option>
+                                    <option value="">Não funciona / funcionamento irregular;</option>
+                                    <option value="">Cabelos danificados</option>
+                                    <option value="">Corpo necessita de restauração</option>
+                                    <option value="">Falta ou Troca de Roupas e Acessórios</option>
+                                    <option value="">Contatos oxidados.</option>
+                                    <option value="">Limpeza e reparos</option>
+                                </select><br>
+                            <label> Digite sua mensagem<br></label><textarea name="message" id="Mensagem" rows="15" cols="50"></textarea><br>
+                            <button type="submit"  onclick="alert('Solicitação enviada! Aguarde nosso contato')
+                            "style="margin: 10px;">Enviar</button> <!--Um botão normal -->
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
