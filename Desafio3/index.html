@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Einstein - Wikipédia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #202122;
+            margin: 0;
+            background-color: #f6f6f6;
+        }
+
+        /* Topo da página */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 10px 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Menu Lateral Esquerdo */
+        .sidebar-left {
+            width: 200px;
+            flex-shrink: 0; /* Impede que o menu encolha */
+        }
+
+        .sidebar-left nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: sticky; /* O menu acompanha a rolagem */
+            top: 20px;
+        }
+
+        .sidebar-left nav li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-left nav a {
+            text-decoration: none;
+            color: #3366cc;
+        }
+
+        .sidebar-left nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            flex-grow: 1;
+            background: #fff;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-family: serif;
+            border-bottom: 1px solid #a2a9b1;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Infobox (Direita) */
+        .infobox {
+            width: 280px;
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            padding: 10px;
+            font-size: 0.85rem;
+        }
+
+        .infobox h2 {
+            text-align: center;
+            background: #cedff2;
+            margin: -10px -10px 10px -10px;
+            padding: 5px;
+            font-size: 1.1rem;
+        }
+
+        /* Responsividade básica */
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .sidebar-left { width: 100%; order: 2; }
+            .infobox { width: 100%; order: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <strong>Wikipédia</strong>
+</header>
+
+<div class="container">
+    <div class="sidebar-left">
+        <nav aria-label="Sumário">
+            <ul>
+                <li><a href="#vida">Vida e carreira</a></li>
+                <li><a href="#cientifica">Carreira científica</a></li>
+                <li><a href="#legado">Legado</a></li>
+                <li><a href="#premios">Prêmios e honras</a></li>
+                <li><a href="#publicacoes">Publicações</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <article>
+            <h1>Albert Einstein</h1>
+            
+            <section id="vida">
+                <h2>Vida e carreira</h2>
+                <p>Nascido em Ulm, na Alemanha, Einstein mostrou desde cedo uma aptidão incrível para a matemática e física...</p>
+            </section>
+
+            <section id="cientifica">
+                <h2>Carreira científica</h2>
+                <p>Em seu "ano milagroso" de 1905, ele publicou quatro artigos que revolucionaram a física teórica...</p>
+            </section>
+
+            <section id="legado">
+                <h2>Legado</h2>
+                <p>O nome "Einstein" tornou-se sinônimo de gênio em todo o mundo, influenciando não apenas a ciência, mas a cultura popular.</p>
+            </section>
+
+            <section id="premios">
+                <h2>Prêmios e honras</h2>
+                <p>Einstein recebeu o Prêmio Nobel de Física em 1921 por sua explicação do efeito fotoelétrico.</p>
+           </section>
+                       <section id="publicacoes">
+                <h2>Publicações científicas</h2>
+                
+                <details>
+                    <summary>Einstein, Albert (1901) - Fenômenos da capilaridade</summary>
+                    <div class="pub-content">
+                        Einstein, Albert (1901). "Folgerungen aus den Capillaritätserscheinungen" [Conclusões extraídas dos fenômenos da capilaridade]. Annalen der Physik. doi:10.1002/andp.19013090306.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Einstein, Albert (1905a) - Produção e transformação da luz</summary>
+                    <div class="pub-content">
+                        Einstein, Albert (1905a). «Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt» [Em um ponto de vista heurístico sobre a produção e transformação da luz]. Annalen der Physik. doi:10.1002/andp.19053220607.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Einstein, Albert (1905b) - Dimensões moleculares</summary>
+                    <div class="pub-content">
+                        Einstein, Albert (1905b). Eine neue Bestimmung der Moleküldimensionen [Uma nova determinação de dimensões moleculares]. Tese de doutorado. doi:10.3929/ethz-a-000565688.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Einstein, Albert (1905d) - Eletrodinâmica dos Corpos em Movimento</summary>
+                    <div class="pub-content">
+                        Einstein, Albert (1905d). "Zur Elektrodynamik bewegter Körper" [Sobre a Eletrodinâmica dos Corpos em Movimento]. Annalen der Physik. doi:10.1002/andp.19053221004.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Einstein, Albert (1905e) - A Inércia e o Conteúdo Energético ($E=mc^2$)</summary>
+                    <div class="pub-content">
+                        Einstein, Albert (1905e). "Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?" [A Inércia de um Corpo Depende de Seu Conteúdo Energético?]. doi:10.1002/andp.19053231314.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Einstein, Albert (1915) - Equações de campo da gravidade</summary>
+                    <div class="pub-content">
+                        Einstein, Albert (1915). "Die Feldgleichungen der Gravitation" [As equações de campo da gravidade]. Sitzungsberichte 1915. Berlim: Academia de Ciências.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Einstein, Albert; Podolsky, B.; Rosen, N. (1935) - O paradoxo EPR</summary>
+                    <div class="pub-content">
+                        "Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?". Physical Review. doi:10.1103/PhysRev.47.777.
+                    </div>
+                </details>
+
+                <p><em>Nota: Outras publicações importantes e documentos coletados (Vol. 1–10) estão disponíveis via Princeton University Press.</em></p>
+            </section>
+
+        </article>
+    </main>
+
+    <aside class="infobox">
+        <h2>Albert Einstein</h2>
+        <div style="text-align:center">
+            <img src="Albert_Einstein.jpg" alt="Albert Einstein" width="100%">
+        </div>
+        <p><strong>Nascimento:</strong> 1879</p>
+        <p><strong>Morte:</strong> 1955</p>
+    </aside>
+</div>
+
+</body>
+</html>
