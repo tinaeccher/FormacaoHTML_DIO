@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter e Progress</title>
+</head>
+
+
+    <header>
+        
+    </header>
+    
+    <main>
+
+        <meter max="100" min="0" value="50"></meter>
+
+        <progress id="progress" max="100" min="0" value="0"></progress>
+        <script>
+            var progress= document.getElementById('progress');
+            const interval = setInterval(() => {
+                progress.value += 10;
+                if (progress.value >= 100){
+                alert('Carregamento concluído')
+                clearInterval(interval);
+                }
+            }, 1000);
+        </script>
+    </main>
+
+    <footer>
+        <p>Para copiar esta informacao, pressione <kbd> CTRL <kbd> + <kbd> C </kbd></p>
+    </footer>
+
+</body>
+</html>
