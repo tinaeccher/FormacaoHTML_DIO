@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mostrando recursos Especiais do HTML</title>
+    <style>
+        kbd{
+            border: solid 1px #000000;
+            }
+        pre{
+            background: #F151F1;
+            }
+            pre > code {
+                color: #ae0505
+            }
+        details > summary > code{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 
 <!--Tags bgcolor e font vão cair em desuso em html pois é considerada para o CSS-->
-<body bgcolor="#000000">
+<body bgcolor="#F1F1F1">
     <font face ="Arial" color="#FFFFFF">Dio.me Trilha HTML</font> 
 
     <header>
@@ -37,6 +51,7 @@
         <!-- O Select listam as opções para serem escolhidas no componente-->
         <label>Selecione o Browser</label>
         <select name="browser">
+            <option value="">Selecione um navegador</option>
             <option value="">Google Chrome</option>
             <Option value="">Firefox</Option>
             <option value="">Microsoft Edge</option>
@@ -44,6 +59,32 @@
             <option value="">Opera</option>
         </select>
         
+        <p>Para copiar esta informação, pressione <kbd>CTRL </kbd> + <kbd>C</kbd></p> 
+        <!--TAG "kbd" Mostrar com fonte monoespaçada indicando parainstruções com o teclado-->
+        <p>Para trocar o fundo de um elemetno, utilize o comando <code> Background-color </code></p>
+        <p>Comando completo para Alterar a cor de fundo</p>
+        <pre><!--Comando pré indica que possui uma formatação para codigos-->
+
+            <p>Nesse momento é aplicado o comando Pré e Code para formatação de código fonte</p>
+            <code> code{
+                background-color: #f1f1f1;
+                color: red;
+            }
+            </code>
+        </pre>
+
+        <Details><!--Utilizar as tags details e Summary para que seja feito um tópico com o contéudo oculto-->
+            <Summary>Como troco a cor de fundo de um elemento no HTML</Summary>
+            <p>Para executar essa ação, utilize o comando <code>background-color</code> no CSS</p>
+        </Details>
+
+        <meter>
+
+        </meter>
+
+        <progress>
+            
+        </progress>
     </main>
 
     <footer>
